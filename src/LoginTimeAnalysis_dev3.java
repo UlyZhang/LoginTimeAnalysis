@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ulysses.LTA;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -21,14 +20,14 @@ public class LoginTimeAnalysis_dev3 {
     public static void main(String[] args) throws IOException, ParseException, InvalidFormatException {
         args = new String[1];
         args[0] = "merge";
-        if(args.length != 0){
-            if(args[0].equals("merge")) {
+        if (args.length != 0) {
+            if (args[0].equals("merge")) {
                 Controller.LaunchMerge("input");
             } else {
                 System.out.println("Please inster correct instruction.");
             }
         } else {
             Controller.Launch("input");
-        }  
+        }
     }
 }
